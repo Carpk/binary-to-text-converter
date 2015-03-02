@@ -10,8 +10,10 @@ import java.util.Scanner;
     System.out.print("Enter in data: ");
     data = user_input.next();
 
+    int charCode = Integer.parseInt(data, 2);
+    String str = new Character((char)charCode).toString();
 
-    System.out.println("your input was: " + data);
+    System.out.println("your input was: " + str);
   }
 
 }
